@@ -269,7 +269,7 @@ Watch the display - you should see:
     "temp_warn": 45
 }
 ```
-Then restart the service: `sudo systemctl restart oled-stats`
+Then restart the service: `sudo systemctl restart pi5-oled-status`
 
 ---
 
@@ -277,10 +277,10 @@ Then restart the service: `sudo systemctl restart oled-stats`
 
 | Command | Description |
 |---------|-------------|
-| `sudo systemctl status oled-stats` | Check service status |
-| `sudo systemctl restart oled-stats` | Restart after config changes |
-| `sudo systemctl stop oled-stats` | Stop (shows OFFLINE) |
-| `journalctl -u oled-stats -f` | View live logs |
+| `sudo systemctl status pi5-oled-status` | Check service status |
+| `sudo systemctl restart pi5-oled-status` | Restart after config changes |
+| `sudo systemctl stop pi5-oled-status` | Stop (shows OFFLINE) |
+| `journalctl -u pi5-oled-status -f` | View live logs |
 | `sudo i2cdetect -y 1` | Check display connection |
 
 ---
