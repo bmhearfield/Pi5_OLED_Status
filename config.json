@@ -1,0 +1,39 @@
+{
+    "display": {
+        "width": 128,
+        "height": 64,
+        "i2c_address": "0x3C",
+        "rotation": 0
+    },
+    "timing": {
+        "refresh_interval": 1.0,
+        "rotation_interval": 3
+    },
+    "fonts": {
+        "text_font": "PixelOperator.ttf",
+        "text_size": 16,
+        "text_size_large": 24,
+        "icon_font": "la-solid-900.ttf",
+        "icon_size": 14
+    },
+    "thresholds": {
+        "load_warn": 2.0,
+        "temp_warn": 70,
+        "mem_warn": 80,
+        "disk_warn": 80
+    },
+    "icons": {
+        "hostname": "\uf108",
+        "wifi": "\uf1eb",
+        "lan": "\uf6ff",
+        "offline": "\uf011",
+        "load_normal": "\uf0e7",
+        "load_warn": "\uf06d",
+        "temp_normal": "\uf2c9",
+        "temp_warn": "\uf06d",
+        "mem_normal": "\uf0ae",
+        "mem_warn": "\uf071",
+        "disk_normal": "\uf0a0",
+        "disk_warn": "\uf071"
+    }
+}
