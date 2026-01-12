@@ -14,6 +14,10 @@ A customizable OLED stats display for Raspberry Pi with dynamic icons, configura
 ## Display Layout
 
 **Normal Operation:**
+
+![Status Screen](/Images/Status_Screen.jpg)
+
+
 ```
 [🖥️] hostname        ← Rotates: hostname → LAN IP → WiFi IP
 [⚡] 0.15  [🌡️] 45C   ← Load (⚡→🔥 if high) + Temp (🌡️→🔥 if hot)
