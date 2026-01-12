@@ -38,7 +38,7 @@ Pi5_OLED_Status/
 ├── config.json          # Configuration file
 ├── README.md            # This file
 ├── Scripts/
-│   └── stats.py         # Main display script
+│   └── status.py         # Main display script
 └── Fonts/
     ├── PixelOperator.ttf       # Text font
     ├── PixelOperator-Bold.ttf  # Bold variant
@@ -96,7 +96,7 @@ pip3 install adafruit-circuitpython-ssd1306
 
 ```bash
 source ~/stats_env/bin/activate
-python3 Scripts/stats.py
+python3 Scripts/status.py
 ```
 
 Press `Ctrl+C` to stop - you should see the "OFFLINE" screen.
@@ -217,7 +217,7 @@ Type=simple
 User=YOUR_USERNAME
 Environment=PATH=/home/YOUR_USERNAME/stats_env/bin:/usr/bin:/bin
 WorkingDirectory=/home/YOUR_USERNAME/Pi5_OLED_Status/Scripts
-ExecStart=/home/YOUR_USERNAME/stats_env/bin/python3 /home/YOUR_USERNAME/Pi5_OLED_Status/Scripts/stats.py
+ExecStart=/home/YOUR_USERNAME/stats_env/bin/python3 /home/YOUR_USERNAME/Pi5_OLED_Status/Scripts/status.py
 Restart=on-failure
 RestartSec=5
 TimeoutStopSec=10
@@ -300,7 +300,7 @@ sudo i2cdetect -y 1
 
 ### GPIO busy error
 ```bash
-pkill -9 -f stats.py
+pkill -9 -f status.py
 ```
 
 ### Icons not showing
@@ -310,7 +310,7 @@ pkill -9 -f stats.py
 
 ### Service won't start
 ```bash
-journalctl -u oled-stats -n 50
+journalctl -u pi5-oled-status -n 50
 ```
 Common fixes:
 - Correct username in service file
